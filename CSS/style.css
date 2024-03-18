@@ -1,0 +1,295 @@
+/*CSS Reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*CSS Veriables*/
+:root{
+    --navbar-height: 100px;
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+/*Navigation Bar: Logo & img*/
+#logo{
+    margin: 34px 45px;
+}
+#logo img{
+    height: 100px;
+    margin:3px 6px; 
+}
+/*Navigation Bar: List Styling*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+  
+}
+#navbar ul{
+    display: flex;
+    font-family: sans-serif;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a {
+    color: black;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: magenta;
+    background-color: white;
+}
+/*Home Section*/
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before {
+    content: "";
+    background: url(../img/kh3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 642px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1 {
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+#home .btn:hover{
+    background: seagreen;
+}
+#about{
+    width: 100%;
+    height: 100vh;
+}
+#about .container{
+    padding-top: 70px;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 50px;
+    color: black;
+    font-size: 34px;
+    font-weight: bold;
+}
+.heading span{
+    color: #b2744c;
+}
+/*Services Section*/
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 3px solid seagreen;
+    padding: 34px;
+    margin: 3px 55px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-family: sans-serif;
+}
+/*Banner Section*/
+#banner3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+   margin-top: 40px;
+}
+#banner3 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("../img/download\ \(11\).jpeg");
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+#banner3 .banner-box2{
+    background-image: url("../img/national-fast-food-day.jpg");
+}
+#banner3 .banner-box3{
+    background-image: url("../img/kh9.jpeg");
+}
+/*Feature Section*/
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+#feature .fe-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 10px;
+    color: #088178;
+    background-color: white;
+}
+#feature .fe-box:nth-child(2)h6{
+    background-color: #cdebbc;
+}
+#feature .fe-box:nth-child(3)h6{
+    background-color: #d1e8f2;
+}
+#feature .fe-box:nth-child(4)h6{
+    background-color: #cdd4f8;
+}
+#feature .fe-box:nth-child(5)h6{
+    background-color: #f6dbf6;
+}
+#feature .fe-box:nth-child(6)h6{
+    background-color: #fff2e5;
+}
+/*Clients Section*/
+#clients-section{
+    position: relative;
+    height: 344px;
+}
+#clients-section::before{
+    content: "";
+    position: absolute;
+    background: url(../img/360_F_389328016_ak3iUrk15slWfEZdYL96O6eKTUyImDeC.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px;
+
+}
+#clients img {
+    height: 124px;
+}
+/*Contact Section*/
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(../img/download.jpeg);
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 14px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form {
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: sans-serif;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+/*Utility Classes*/
+.h-primary{
+    font-family: sans-serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-family: sans-serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: mediumvioletred ;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
